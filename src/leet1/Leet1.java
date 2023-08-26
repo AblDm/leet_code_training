@@ -2,7 +2,7 @@ package leet1;
 
 import java.util.Arrays;
 
-public class leet1 {
+public class Leet1 {
 
     //Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
     //

@@ -1,6 +1,6 @@
 package leet1;
 
-public class leet2 {
+public class Leet2 {
 
     //Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
     //
@@ -59,6 +59,7 @@ public class leet2 {
 
         System.out.println("результат " + result + " получен за "+ (finish - start) + " наносекунд" );
     }
+
 
     public static Integer romanToInteger (String s) {
             int ans = 0, num = 0;
