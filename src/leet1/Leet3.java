@@ -37,17 +37,18 @@ public class Leet3 {
 
         String[] strs = {"flower","flow","flight"};
 
-       String result = longestCommonPrefix(strs);
+
         Long start = System.nanoTime();
-
+        StringBuilder r = longestCommonPrefix(strs);
         Long finish = System.nanoTime();
+        StringBuilder p = new StringBuilder("результат " + r + " получен за " + (finish - start) + " наносекунд");
 
-        System.out.println("результат " + result + " получен за "+ (finish - start) + " наносекунд" );
+        System.out.println(p);
 
 
 
     }
-        public static String longestCommonPrefix(String[] strs) {
+        public static StringBuilder longestCommonPrefix(String[] strs) {
             StringBuilder result = new StringBuilder ();
             Arrays.sort(strs);
             char[] first=strs[0].toCharArray();
@@ -58,6 +59,6 @@ public class Leet3 {
                 result.append(first[i]);
 
             }
-            return result.toString();
+            return result;
         }
 }
