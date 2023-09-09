@@ -51,7 +51,7 @@ public class Leet6 {
         while(start <= last) {
             char currFirst = s.charAt(start);
             char currLast = s.charAt(last);
-            if (!Character.isLetterOrDigit(currFirst )) {
+            if (!Character.isLetterOrDigit(currFirst)) {
                 start++;
             } else if(!Character.isLetterOrDigit(currLast)) {
                 last--;
